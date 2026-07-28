@@ -213,37 +213,37 @@ Optimized for:
   <img src="frontend/assets/mobile.png" width="45%">
 </p>
 
-### Dashboard
-
-```
-![Dashboard](JOB-APPLICATION-TRACKER/frontend/assets/dashboard.png)
-```
-
-### Add Application
-
-```
-![Add Application](JOB-APPLICATION-TRACKER/frontend/assets/add-application.png)
-```
-
-### Statistics
-
-```
-![Statistics](JOB-APPLICATION-TRACKER/frontend/assets/statistics.png)
-```
-
-### Dark Mode
-
-```
-![Dark Mode](JOB-APPLICATION-TRACKER/frontend/assets/dark-mode.png)
-```
-
-### Mobile View
-
-```
-![Mobile](JOB-APPLICATION-TRACKER/frontend/assets/mobile.png)
-```
+![Dashboard](assets/screenshots/dashboard.png)
 
 ---
+
+## ➕ Add Application
+
+![Add Application](assets/screenshots/add-application.png)
+
+---
+
+## 📊 Statistics
+
+![Statistics](assets/screenshots/statistics.png)
+
+---
+
+## 📈 Analytics Chart
+
+![Analytics](assets/screenshots/chart.png)
+
+---
+
+## 🌙 Dark Mode
+
+![Dark Mode](assets/screenshots/dark-mode.png)
+
+---
+
+## 📱 Mobile View
+
+![Mobile View](assets/screenshots/mobile.png)
 
 # 🎯 Future Improvements
 
