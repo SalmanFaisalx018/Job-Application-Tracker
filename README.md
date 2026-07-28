@@ -204,6 +204,9 @@ Optimized for:
 ---
 
 <h2>📸 Screenshots</h2>
+<p align="center">
+  <img src="assets/add-application.png" width="45%">
+</p>
 
 <p align="center">
   <img src="assets/dashboard.png" width="45%">
@@ -225,11 +228,6 @@ Optimized for:
 
 ---
 
-## 📊 Statistics
-
-![Statistics](assets/statistics.png)
-
----
 
 ## 📈 Analytics Chart
 
