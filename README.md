@@ -59,26 +59,35 @@ A modern, responsive **Full-Stack Job Application Tracker** that helps users man
 ```text
 Job-Application-Tracker
 │
+├── assets
+│   ├── dashboard.png
+│   ├── add-application.png
+│   ├── statistics.png
+│   ├── chart.png
+│   ├── dark-mode.png
+│   └── mobile.png
+│
 ├── backend
 │   ├── controllers
 │   │   └── applicationController.js
-│   │
 │   ├── data
 │   │   └── applications.json
-│   │
 │   ├── routes
 │   │   └── applicationRoutes.js
-│   │
 │   ├── package.json
-│   └── server.js
+│   ├── package-lock.json
+│   ├── server.js
+│   └── node_modules/         
 │
 ├── frontend
 │   ├── index.html
 │   ├── style.css
 │   ├── script.js
 │   ├── favicon.png
-│   └── assets
+│   └── assets/               
 │
+├── .gitignore
+├── LICENSE                    
 └── README.md
 ```
 
