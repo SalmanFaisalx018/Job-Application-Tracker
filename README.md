@@ -213,37 +213,37 @@ Optimized for:
   <img src="frontend/assets/mobile.png" width="45%">
 </p>
 
-![Dashboard](assets/screenshots/dashboard.png)
+![Dashboard](assets/dashboard.png)
 
 ---
 
 ## ➕ Add Application
 
-![Add Application](assets/screenshots/add-application.png)
+![Add Application](assets/add-application.png)
 
 ---
 
 ## 📊 Statistics
 
-![Statistics](assets/screenshots/statistics.png)
+![Statistics](assets/statistics.png)
 
 ---
 
 ## 📈 Analytics Chart
 
-![Analytics](assets/screenshots/chart.png)
+![Analytics](assets/chart.png)
 
 ---
 
 ## 🌙 Dark Mode
 
-![Dark Mode](assets/screenshots/dark-mode.png)
+![Dark Mode](assets/dark-mode.png)
 
 ---
 
 ## 📱 Mobile View
 
-![Mobile View](assets/screenshots/mobile.png)
+![Mobile View](assets/mobile.png)
 
 # 🎯 Future Improvements
 
