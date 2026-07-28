@@ -6,8 +6,6 @@ A modern, responsive **Full-Stack Job Application Tracker** that helps users man
 
 ## 📸 Preview
 
-> Add screenshots here after deployment.
-
 | Dashboard | Dark Mode |
 |-----------|-----------|
 | ![Dashboard](assets/dashboard.png) | ![Dark Mode](assets/dark-mode.png) |
