@@ -216,31 +216,31 @@ Optimized for:
 ### Dashboard
 
 ```
-![Dashboard](assets/dashboard.png)
+![Dashboard](JOB-APPLICATION-TRACKER/frontend/assets/dashboard.png)
 ```
 
 ### Add Application
 
 ```
-![Add Application](assets/add-application.png)
+![Add Application](JOB-APPLICATION-TRACKER/frontend/assets/add-application.png)
 ```
 
 ### Statistics
 
 ```
-![Statistics](assets/statistics.png)
+![Statistics](JOB-APPLICATION-TRACKER/frontend/assets/statistics.png)
 ```
 
 ### Dark Mode
 
 ```
-![Dark Mode](assets/dark-mode.png)
+![Dark Mode](JOB-APPLICATION-TRACKER/frontend/assets/dark-mode.png)
 ```
 
 ### Mobile View
 
 ```
-![Mobile](assets/mobile.png)
+![Mobile](JOB-APPLICATION-TRACKER/frontend/assets/mobile.png)
 ```
 
 ---
