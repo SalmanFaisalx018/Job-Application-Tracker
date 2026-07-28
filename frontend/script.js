@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000/api/applications";
+const API_URL = "https://jobapplication-tracker-production.up.railway.app/applications";
 let statusChart;
 const form = document.getElementById("applicationForm");
 const container = document.getElementById("applicationsContainer");
