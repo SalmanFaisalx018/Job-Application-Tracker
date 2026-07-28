@@ -1,0 +1,72 @@
+[
+  {
+    "id": 2,
+    "company": "Microsoft",
+    "position": "Software Engineer",
+    "location": "Islamabad",
+    "status": "Rejected",
+    "salary": "$4000",
+    "dateApplied": "2026-07-20",
+    "notes": "Updated after HR interview"
+  },
+  {
+    "id": 1785077423830,
+    "company": "OpenAI",
+    "position": "Backend Intern",
+    "location": "Remote",
+    "status": "Applied",
+    "salary": "$2500",
+    "dateApplied": "2026-07-07",
+    "notes": "Applied through company website"
+  },
+  {
+    "id": 1785119974786,
+    "company": "Amazon",
+    "position": "Full Stack Intern",
+    "location": "Remote",
+    "status": "Applied",
+    "salary": "$2800",
+    "dateApplied": "2026-07-27",
+    "notes": "Applied via careers page"
+  },
+  {
+    "id": 1785121212782,
+    "company": "PGCL",
+    "position": "RE MECHANICAL ENGINEER",
+    "location": "ISLAMABAD",
+    "status": "Interview",
+    "salary": "200000",
+    "dateApplied": "2026-07-09",
+    "notes": "To be taken"
+  },
+  {
+    "id": 1785125047732,
+    "company": "Microsoft",
+    "position": "Software Engineer",
+    "location": "Islamabad",
+    "status": "Rejected",
+    "salary": "$4000",
+    "dateApplied": "2026-07-20",
+    "notes": "Updated after HR interview"
+  },
+  {
+    "id": 1785164255709,
+    "company": "Imtiaz Super Store",
+    "position": "Sales Man",
+    "location": "E-11",
+    "status": "Interview",
+    "salary": "RS: 45000",
+    "dateApplied": "2026-07-22",
+    "notes": ""
+  },
+  {
+    "id": 1785167674384,
+    "company": "Imtiaz Super Store",
+    "position": "Sales Man",
+    "location": "E-11",
+    "status": "Interview",
+    "salary": "RS: 45000",
+    "dateApplied": "2026-07-15",
+    "notes": ""
+  }
+]

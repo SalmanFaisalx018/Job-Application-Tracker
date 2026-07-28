@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Job Application Tracker</title>
+
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Job Application Tracker</h1>
+        <p>Track every internship and job application in one place.</p>
+
+<button id="themeToggle" class="theme-toggle">
+    🌙
+</button>
+    </header>
+    <section class="stats">
+
+        <div class="stat-card">
+            <h3 id="totalCount">0</h3>
+            <p>Total Applications</p>
+        </div>
+
+        <div class="stat-card">
+            <h3 id="appliedCount">0</h3>
+            <p>Applied</p>
+        </div>
+
+        <div class="stat-card">
+            <h3 id="interviewCount">0</h3>
+            <p>Interview</p>
+        </div>
+
+        <div class="stat-card">
+            <h3 id="offerCount">0</h3>
+            <p>Offer</p>
+        </div>
+    </section>
+
+    <section class="chart-section">
+
+        <h2>Application Statistics</h2>
+
+        <canvas id="statusChart"></canvas>
+
+    </section>
+
+    <section class="toolbar">
+
+        <input type="text" id="searchInput" placeholder="Search company or position...">
+
+        <select id="filterStatus">
+
+            <option value="All">All Status</option>
+            <option value="Applied">Applied</option>
+            <option value="Interview">Interview</option>
+            <option value="Offer">Offer</option>
+            <option value="Rejected">Rejected</option>
+
+        </select>
+
+    </section>
+
+    <main>
+
+        <section class="form-section">
+
+            <h2>Add Application</h2>
+
+            <form id="applicationForm">
+
+                <input type="text" id="company" placeholder="Company" required>
+
+                <input type="text" id="position" placeholder="Position" required>
+
+                <input type="text" id="location" placeholder="Location" required>
+
+                <select id="status">
+
+                    <option>Applied</option>
+                    <option>Interview</option>
+                    <option>Rejected</option>
+                    <option>Offer</option>
+
+                </select>
+
+                <input type="text" id="salary" placeholder="Salary">
+
+                <input type="date" id="dateApplied" required>
+
+                <textarea id="notes" placeholder="Notes"></textarea>
+
+                <button type="submit">
+
+                    Add Application
+
+                </button>
+
+            </form>
+
+        </section>
+        <button id="exportBtn" class="export-btn">
+    Export CSV
+</button>
+
+<select id="sortApplications">
+
+    <option value="newest">Newest First</option>
+
+    <option value="oldest">Oldest First</option>
+
+    <option value="company">Company (A-Z)</option>
+
+</select>
+        <section class="list-section">
+
+            <h2>Applications</h2>
+
+            <div id="applicationsContainer">
+
+            </div>
+
+        </section>
+
+        <!-- View Application Modal -->
+<div id="modal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close">&times;</span>
+
+        <h2>Application Details</h2>
+
+        <div id="modalBody"></div>
+
+    </div>
+
+</div>
+
+    </main>
+    <div id="toast"></div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+<footer>
+    <p>© 2026 Salman Faisal | Built with HTML, CSS, JavaScript, Node.js & Express.js</p>
+</footer>
+</html>
