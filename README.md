@@ -204,13 +204,13 @@ Optimized for:
 <h2>📸 Screenshots</h2>
 
 <p align="center">
-  <img src="frontend/assets/dashboard.png" width="45%">
-  <img src="frontend/assets/dark-mode.png" width="45%">
+  <img src="assets/dashboard.png" width="45%">
+  <img src="assets/dark-mode.png" width="45%">
 </p>
 
 <p align="center">
-  <img src="frontend/assets/chart.png" width="45%">
-  <img src="frontend/assets/mobile.png" width="45%">
+  <img src="assets/chart.png" width="45%">
+  <img src="assets/mobile.png" width="45%">
 </p>
 
 ![Dashboard](assets/dashboard.png)
