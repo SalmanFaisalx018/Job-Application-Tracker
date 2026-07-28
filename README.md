@@ -11,7 +11,13 @@ A modern, responsive **Full-Stack Job Application Tracker** that helps users man
 | ![Dashboard](assets/dashboard.png) | ![Dark Mode](assets/dark-mode.png) |
 
 ---
+## 🚀 Live Demo
 
+**Frontend:** (https://job-application-tracker-sand-nine.vercel.app)
+
+**Backend API:** (https://jobapplication-tracker-production.up.railway.app)
+
+---
 
 # ✨ Features
 
@@ -43,6 +49,9 @@ A modern, responsive **Full-Stack Job Application Tracker** that helps users man
 ### Database
 - JSON File Storage (File System)
 
+### Deployment
+- Vercel
+- Railway
 ---
 
 # 📂 Project Structure
