@@ -14,13 +14,6 @@ A modern, responsive **Full-Stack Job Application Tracker** that helps users man
 
 ---
 
-## 🚀 Live Demo
-
-**Frontend:** Coming Soon
-
-**Backend API:** Coming Soon
-
----
 
 # ✨ Features
 
