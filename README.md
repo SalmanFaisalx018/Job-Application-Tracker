@@ -216,31 +216,31 @@ Optimized for:
 ### Dashboard
 
 ```
-![Dashboard](frontend/assets/dashboard.png)
+![Dashboard](assets/dashboard.png)
 ```
 
 ### Add Application
 
 ```
-![Add Application](frontend/assets/add-application.png)
+![Add Application](assets/add-application.png)
 ```
 
 ### Statistics
 
 ```
-![Statistics](frontend/assets/statistics.png)
+![Statistics](assets/statistics.png)
 ```
 
 ### Dark Mode
 
 ```
-![Dark Mode](frontend/assets/dark-mode.png)
+![Dark Mode](assets/dark-mode.png)
 ```
 
 ### Mobile View
 
 ```
-![Mobile](frontend/assets/mobile.png)
+![Mobile](assets/mobile.png)
 ```
 
 ---
