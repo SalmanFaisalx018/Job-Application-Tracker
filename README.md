@@ -1,9 +1,18 @@
 # 💼 Job Application Tracker
 
-A modern, responsive **Full-Stack Job Application Tracker** that helps users manage and organize job applications efficiently. Built with **HTML, CSS, JavaScript, Node.js, and Express.js**, this application provides complete CRUD functionality with an intuitive dashboard, analytics, search, filtering, dark mode, and CSV export.
+A modern, responsive **Full-Stack Job Application Tracker** that helps users securely manage and organize their job applications. Built with **HTML, CSS, JavaScript, Node.js, Express.js, and JWT Authentication**, the application provides user registration, secure login, CRUD operations, analytics, search, filtering, dark mode, CSV export, and a responsive user experience.
 
 ---
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=jsonwebtokens)
+![Railway](https://img.shields.io/badge/Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
+---
 ## 📸 Preview
 
 | Dashboard | Dark Mode |
@@ -21,17 +30,19 @@ A modern, responsive **Full-Stack Job Application Tracker** that helps users man
 
 # ✨ Features
 
+- 🔐 User Authentication (Signup & Login)
+- 🛡 Secure JWT-based Authentication
 - 📋 Create, Read, Update & Delete Job Applications
-- 🔍 Search applications by Company or Position
-- 🎯 Filter applications by Status
+- 🔍 Search Applications by Company or Position
+- 🎯 Filter Applications by Status
 - 📊 Dashboard Statistics
 - 📈 Interactive Status Chart using Chart.js
-- 📄 Export applications to CSV
+- 📄 Export Applications to CSV
 - 🌙 Dark / Light Mode
 - 👁 View Application Details in Modal
+- 🚪 Secure Logout
 - 📱 Fully Responsive Design
-- 🎨 Modern and Clean User Interface
-
+- 🎨 Modern & Professional User Interface
 ---
 
 # 🛠 Tech Stack
@@ -46,12 +57,16 @@ A modern, responsive **Full-Stack Job Application Tracker** that helps users man
 - Node.js
 - Express.js
 
+### Authentication
+- JSON Web Token (JWT)
+- bcrypt.js
+
 ### Database
 - JSON File Storage (File System)
 
 ### Deployment
-- Vercel
-- Railway
+- Vercel (Frontend)
+- Railway (Backend)
 ---
 
 # 📂 Project Structure
@@ -62,32 +77,45 @@ Job-Application-Tracker
 ├── assets
 │   ├── dashboard.png
 │   ├── add-application.png
-│   ├── statistics.png
 │   ├── chart.png
 │   ├── dark-mode.png
-│   └── mobile.png
+│   ├── mobile.png
+│   └── statistics.png
 │
 ├── backend
 │   ├── controllers
-│   │   └── applicationController.js
-│   ├── data
-│   │   └── applications.json
+│   │   ├── applicationController.js
+│   │   └── authController.js
+│   │
+│   ├── middleware
+│   │   └── authMiddleware.js
+│   │
 │   ├── routes
-│   │   └── applicationRoutes.js
+│   │   ├── applicationRoutes.js
+│   │   └── authRoutes.js
+│   │
+│   ├── data
+│   │   ├── applications.json
+│   │   └── users.json
+│   │
 │   ├── package.json
 │   ├── package-lock.json
-│   ├── server.js
-│   └── node_modules/         
+│   └── server.js
 │
 ├── frontend
 │   ├── index.html
+│   ├── login.html
+│   ├── signup.html
+│   ├── auth.css
+│   ├── auth.js
 │   ├── style.css
 │   ├── script.js
-│   ├── favicon.png
-│   └── assets/               
+│   ├── login.svg
+│   └── favicon.png
 │
+├── .env.example
 ├── .gitignore
-├── LICENSE                    
+├── LICENSE
 └── README.md
 ```
 
@@ -115,17 +143,26 @@ cd backend
 
 ```bash
 npm install
+
+```
+## 3️⃣ Configure Environment Variables
+
+Create a `.env` file inside the **backend** folder.
+
+```env
+PORT=3000
+JWT_SECRET=your_secret_key_here
 ```
 
 ---
 
-## 3️⃣ Start the Backend Server
+## 4️⃣ Start the Backend Server
 
 ```bash
 npm run dev
 ```
 
-Server will start on:
+Server runs at:
 
 ```
 http://localhost:3000
@@ -133,20 +170,29 @@ http://localhost:3000
 
 ---
 
-## 4️⃣ Run the Frontend
+## 5️⃣ Run the Frontend
 
-Open the **frontend** folder and launch `index.html` using **Live Server** in VS Code.
+Open the **frontend** folder and launch:
+
+```
+login.html
+```
+
+using **Live Server** in VS Code.
 
 ---
 
 # 🌐 REST API Endpoints
 
-| Method | Endpoint | Description |
-|---------|----------|-------------|
-| GET | `/api/applications` | Get all applications |
-| POST | `/api/applications` | Add a new application |
-| PUT | `/api/applications/:id` | Update an application |
-| DELETE | `/api/applications/:id` | Delete an application |
+| Method | Endpoint                | Description           |
+| ------ | ----------------------- | --------------------- |
+| POST   | `/api/auth/signup`      | Register a new user   |
+| POST   | `/api/auth/login`       | Login and receive JWT |
+| GET    | `/api/applications`     | Get all applications  |
+| POST   | `/api/applications`     | Create application    |
+| PUT    | `/api/applications/:id` | Update application    |
+| DELETE | `/api/applications/:id` | Delete application    |
+
 
 ---
 
@@ -254,15 +300,17 @@ Optimized for:
 
 # 🎯 Future Improvements
 
-- User Authentication
-- Database Integration (MongoDB)
-- Email Notifications
-- Application Deadline Tracking
-- Notes & Attachments
-- Sorting by Date or Salary
-- Pagination
-- Company Logos
+- Password Reset
+- Email Verification
+- MongoDB Integration
+- User Profile Management
+- Protected API Routes
+- Application Deadline Reminders
 - Interview Scheduler
+- Company Logos
+- Notes & Attachments
+- Pagination
+- Sorting & Advanced Filters
 
 ---
 
@@ -272,16 +320,19 @@ Optimized for:
 - CRUD Operations
 - MVC Architecture
 - Express.js Routing
+- Authentication & Authorization
+- JWT (JSON Web Tokens)
+- Password Hashing with bcrypt.js
+- Environment Variables (.env)
 - File System (JSON Database)
-- DOM Manipulation
 - Async/Await
 - Fetch API
+- DOM Manipulation
+- Chart.js Integration
 - Responsive Web Design
 - CSS Grid & Flexbox
-- Chart.js Integration
 - Dark Mode Implementation
-- CSV File Export
-
+- CSV Export
 ---
 
 # 👨‍💻 Author

@@ -5,6 +5,13 @@ const container = document.getElementById("applicationsContainer");
 const searchInput = document.getElementById("searchInput");
 const filterStatus = document.getElementById("filterStatus");
 const exportBtn = document.getElementById("exportBtn");
+const token = localStorage.getItem("token");
+
+if(!token){
+
+window.location="login.html";
+
+}
 
 exportBtn.addEventListener("click", exportCSV);
 const sortApplications =
@@ -37,6 +44,16 @@ themeToggle.addEventListener("click",()=>{
         "theme",
         dark ? "dark":"light"
     );
+
+});
+
+document.getElementById("logoutBtn").addEventListener("click",()=>{
+
+localStorage.removeItem("token");
+
+localStorage.removeItem("user");
+
+window.location="login.html";
 
 });
 

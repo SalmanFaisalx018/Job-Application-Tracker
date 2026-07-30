@@ -35,6 +35,7 @@ header {
 
 }
 
+
 header h1 {
     font-size: 2.2rem;
 }
@@ -715,4 +716,52 @@ body.dark-mode .toolbar {
 }
 button{
     cursor:pointer;
+}
+
+
+/* ==========================
+   Logout Button
+========================== */
+
+.logout-btn,
+#logoutBtn {
+    background: #ef4444;
+    color: #fff;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-shadow: 0 6px 15px rgba(239, 68, 68, 0.25);
+}
+
+.logout-btn:hover,
+#logoutBtn:hover {
+    background: #dc2626;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(239, 68, 68, 0.35);
+}
+
+.logout-btn:active,
+#logoutBtn:active {
+    transform: scale(0.97);
+}
+
+/* Dark Mode */
+
+body.dark-mode .logout-btn,
+body.dark-mode #logoutBtn {
+    background: #dc2626;
+    color: #fff;
+}
+
+body.dark-mode .logout-btn:hover,
+body.dark-mode #logoutBtn:hover {
+    background: #b91c1c;
 }

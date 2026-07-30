@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign Up | Job Application Tracker</title>
+
+    <link rel="stylesheet" href="auth.css">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    >
+
+</head>
+
+<body>
+
+<div class="auth-container">
+
+    <!-- Left Panel -->
+
+    <div class="left-panel">
+
+        <h1> Join Job Application Tracker</h1>
+
+        <p>
+
+            Create your account to organize job applications,
+            monitor interviews, and stay on top of your career journey.
+
+        </p>
+
+       <img src="login.svg" alt="Signup Illustration">
+    </div>
+
+    <!-- Right Panel -->
+
+    <div class="right-panel">
+
+        <div class="logo">
+
+            Create Account 
+
+        </div>
+<div style="display:flex;justify-content:flex-end;margin-bottom:15px;">
+
+    <button
+        id="themeToggle"
+        style="
+        width:45px;
+        height:45px;
+        border-radius:50%;
+        padding:0;
+        "
+    >
+
+        🌙
+
+    </button>
+
+</div>
+        <h2>Start Your Journey</h2>
+
+        <p>
+
+            Fill in your details to create your account.
+
+        </p>
+
+        <form id="signupForm">
+
+            <!-- Name -->
+
+            <div class="input-group">
+
+                <i class="fa-solid fa-user"></i>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Full Name"
+                    required
+                >
+
+            </div>
+
+            <!-- Email -->
+
+            <div class="input-group">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Email Address"
+                    required
+                >
+
+            </div>
+
+            <!-- Password -->
+
+            <div class="input-group">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Password"
+                    required
+                >
+
+                <span
+                    class="toggle-password"
+                    onclick="togglePassword('password',this)"
+                >
+                    <i class="fa-solid fa-eye"></i>
+                </span>
+
+            </div>
+
+            <button id="signupBtn">
+
+                Create Account
+
+            </button>
+
+        </form>
+
+        <div class="form-footer">
+
+            Already have an account?
+
+            <a href="login.html">
+
+                Login
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="auth.js"></script>
+
+<script>
+
+function togglePassword(id, element){
+
+    const input = document.getElementById(id);
+
+    const icon = element.querySelector("i");
+
+    if(input.type === "password"){
+
+        input.type = "text";
+
+        icon.className = "fa-solid fa-eye-slash";
+
+    }else{
+
+        input.type = "password";
+
+        icon.className = "fa-solid fa-eye";
+
+    }
+
+}
+
+</script>
+<script>
+
+const themeToggle = document.getElementById("themeToggle");
+
+if(localStorage.getItem("theme")==="dark"){
+
+    document.body.classList.add("dark-mode");
+
+    themeToggle.textContent="☀️";
+
+}
+
+themeToggle.addEventListener("click",()=>{
+
+    document.body.classList.toggle("dark-mode");
+
+    if(document.body.classList.contains("dark-mode")){
+
+        localStorage.setItem("theme","dark");
+
+        themeToggle.textContent="☀️";
+
+    }else{
+
+        localStorage.setItem("theme","light");
+
+        themeToggle.textContent="🌙";
+
+    }
+
+});
+
+</script>
+</body>
+
+</html>
